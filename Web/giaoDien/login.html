@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivy-Project</title>
+    <link rel="stylesheet" href="style.css">
+     
+
+    <script>
+        function home_redirect(){
+            window.location.href="index.html"}
+        function category_redirect(){
+            window.location.href="category.html"
+        }
+        function product_redirect(){
+            window.location.href="product.html"
+        }
+        function Cart_redirect(){
+            window.location.href="Cart.html"
+        }
+        function login_redirect(){
+            window.location.href="login.html"
+        }
+        function payment_redirect(){
+            window.location.href="payment.html"
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logoIVY.png">
+        </div>
+
+        <div class="menu">
+            <li><input class="home" type="button" value="TRANG CHỦ" onclick="home_redirect()"></li>
+            <li><input class="home" type="button" value="SẢN PHẨM" onclick="category_redirect()"></li>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới về</a></li>
+                    <li><a href="">Collection</a></li>
+                    <li><input class="home" type="button" value="Áo" onclick="product_redirect()"></li>
+                        <ul>
+                            
+                            <li>Áo Sơ Mi</li>
+                            <li>Áo thun</li>
+                            <li>Áo chống nắng</li>
+                            <li>Áo khoác</li>
+
+                        </ul>
+                    </li>
+                    <li><a href="">Quần</a>
+                        <ul>
+                            <li>Quần jean</li>
+                            <li>Quần lửng</li>
+                            <li>Quần dài</li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </li>
+            <li><input class="home" type="button" value="BLOG" onclick="home_redirect()"></li>
+        <li><input class="home" type="button" value="LIÊN HỆ" onclick="home_redirect()"></li>
+
+        </div>
+
+        <div class="other">
+            <LI> <input placeholder="Tìm kiếm" type="Tìm kiếm">
+            </LI>
+            <li><a href=""></a>
+                <input class="other-image" type="image" src="images/cart.png" onclick="Cart_redirect()"></li>
+            </li>
+            <li><a href=""></a>
+                <input class="other-image" type="image" src="images/dic-employee.png" onclick="login_redirect()"></li>
+            </li>
+            
+        </div>
+    </header>
+
+    <section class="login">
+        <div class="login_container">
+            <form action="" class="login_form">
+                <h1 style="font-weight: bold; font-size: 20px;">Đăng nhập</h1>
+                <div class="form_text row">
+                    <label for="">Username</label>
+                    <input type="text" >
+                </div>
+                <div class="form_text row">
+                    <label for="">Password</label>
+                    <input type="Password" >
+                </div>
+                
+                <input class="button" type="button" value="ĐĂNG NHẬP" onclick="home_redirect()">
+            <span>Bạn chưa có tài khoản? <input class="home singup" type="button" value="Đăng ký" onclick="login_redirect()"></span>
+            </form>
+            
+
+        </div>
+        
+        <script>
+            const loginform = document.querySelectorAll('.form_text input')
+            const loginlabel = document.querySelectorAll('.form_text label')
+            for(let i =0; i<2;i++){
+                loginform[i].addEventListener("mouseover", function(){
+                    loginlabel[i].classList.add("focus")
+                })
+                loginform[i].addEventListener("mouseout", function(){
+                    if(loginform[i].value==""){
+                    loginlabel[i].classList.remove("focus")}
+                })
+            }
+        </script>
+    </section>
+
+    <section class="app-container">
+        <p>Tải ứng dụng</p>
+        <div class="app-google">
+            <img src="images/googleplay.png">
+            <img src="images/appstore.png">
+        </div>
+        <p>Nhận thông tin IVY moda</p>
+        <input type="text" placeholder="Nhập email của bạn...">
+    </section>
+
+    <div class="footer">
+        <li><a href=""><img src="images/img-congthuong.png"></a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Tuyển dụng</a></li>
+        <li><a href="">Giới thiệu</a></li>
+    </div>
+</body>
+
+</html>

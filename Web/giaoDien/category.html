@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivy-Project</title>
+    <link rel="stylesheet" href="style.css">
+     
+
+    <script>
+        function home_redirect(){
+            window.location.href="index.html"}
+        function category_redirect(){
+            window.location.href="category.html"
+        }
+        function product_redirect(){
+            window.location.href="product.html"
+        }
+        function Cart_redirect(){
+            window.location.href="Cart.html"
+        }
+        function login_redirect(){
+            window.location.href="login.html"
+        }
+        function payment_redirect(){
+            window.location.href="payment.html"
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logoIVY.png">
+        </div>
+
+        <div class="menu">
+            <li><input class="home" type="button" value="TRANG CHỦ" onclick="home_redirect()"></li>
+            <li><input class="home" type="button" value="SẢN PHẨM" onclick="category_redirect()"></li>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới về</a></li>
+                    <li><a href="">Collection</a></li>
+                    <li><input class="home" type="button" value="Áo" onclick="product_redirect()"></li>
+                        <ul>
+                            
+                            <li>Áo Sơ Mi</li>
+                            <li>Áo thun</li>
+                            <li>Áo chống nắng</li>
+                            <li>Áo khoác</li>
+
+                        </ul>
+                    </li>
+                    <li><a href="">Quần</a>
+                        <ul>
+                            <li>Quần jean</li>
+                            <li>Quần lửng</li>
+                            <li>Quần dài</li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </li>
+            <li><input class="home" type="button" value="BLOG" onclick="home_redirect()"></li>
+            <li><input class="home" type="button" value="LIÊN HỆ" onclick="home_redirect()"></li>
+        </div>
+
+        <div class="other">
+            <LI> <input placeholder="Tìm kiếm" type="Tìm kiếm">
+            </LI>
+            <li><a href=""></a>
+                <input class="other-image" type="image" src="images/cart.png" onclick="Cart_redirect()"></li>
+            </li>
+            <li><a href=""></a>
+                <input class="other-image" type="image" src="images/dic-employee.png" onclick="login_redirect()"></li>
+            </li>
+            
+        </div>
+    </header>
+
+<body>
+
+    <section class="category">
+        <div class="container">
+            <div class="category-top row">
+                <p>Trang chủ</p><span> &#10230;</span>
+                <p>Sản phẩm</p><span> &#10230;</span>
+                <p>Hàng mới về</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="category-left">
+                    <ul>
+                        <li class="category-left-li">
+                            <a href="">Size</a>
+                        </li>
+                        <li class="category-left-li">
+                            <a href="">Màu sắc</a>
+                        </li>
+                        <li class="category-left-li">
+                            <a href="">Mức giá</a>
+                        </li>
+                        <li>
+                            <Button class="category-left-boLoc">
+                                <span>BỘ LỌC</span>
+                            </Button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category-right row">
+                    <div class="category-right-item">
+                        <P>HÀNG MỚI VỀ</P>
+                        
+                    </div>
+                    <div class="category-right-item">
+                        <SELect>
+                            <option value="">Sắp xếp theo</option>
+                            <option value="">Mới nhất</option>
+                            <option value="">hihi</option>
+                            <option value="">Giá từ thấp tới cao</option>
+                            <option value="">Giá từ cao đến thấp</option>
+                        </SELect>
+                    </div>
+                    <div class="category-right-content row">
+                        <div class="category-right-content-item">
+                            <input class="category-right-content-item-Ao" type="image" src="images/soMi1.jfif" onclick="product_redirect()">
+                            <h1>Áo sơ mi chiết eo</h1>
+                            <P>595.000đ </P>
+                            
+
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="images/soMi2.1.jfif">
+                            <h1>Áo Sơ Mi</h1>
+                            <P>580.000đ </P>
+
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="images/ao3.1.jfif">
+                            <h1>Set Áo Sơ Mi </h1>
+                            <P>600.000đ </P>
+
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="images/ao4.1.jpg">
+                            <h1>Set Áo hai dây</h1>
+                            <P>570.000đ </P>
+
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="images/ao5.jpg">
+                            <h1>Áo Phong Cách</h1>
+                            <P>580.000đ </P>
+
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="images/dam.jpg">
+                            <h1>ĐẦM LINEN DÁNG MAXI</h1>
+                            <P>580.000đ </P>
+
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="images/rosie.jpg">
+                            <h1>Rosie Đỏ</h1>
+                            <P>580.000đ </P>
+
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="images/sp6.jfif">
+                            <h1>Quần Âu</h1>
+                            <P>485.000đ </P>
+                        </div>
+                    </div>
+
+                    <div class="category-right-bottom row">
+                        <div class="category-right-bottom-item">
+                            <p>Hiển thị 2 <span>|</span> 4 sản phẩm</p>
+                        </div>
+                        <div class="category-right-bottom-item">
+                            <p><span>&#171;</span> 1 2 3 4 5 <span>&#187;</span> Trang cuối</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="app-container">
+        <p>Tải ứng dụng</p>
+        <div class="app-google">
+            <img src="images/googleplay.png">
+            <img src="images/appstore.png">
+        </div>
+        <p>Nhận thông tin IVY moda</p>
+        <input type="text" placeholder="Nhập email của bạn...">
+    </section>
+
+    <div class="footer">
+        <li><a href=""><img src="images/img-congthuong.png"></a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Tuyển dụng</a></li>
+        <li><a href="">Giới thiệu</a></li>
+    </div>
+</body>
+
+</html>

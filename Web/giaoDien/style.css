@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+li {
+    list-style: none;
+    /* mất dấu gạch đầu dòng*/
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 70px;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.menu input{
+    font-size: 16px;
+}
+
+.menu {
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    text-align: center;
+    padding: 0 12px;
+    /*theo hang ngang*/
+}
+
+.menu>li {
+    padding: 0 12px;
+    position: relative;
+}
+
+.menu>li:hover .sub-menu {
+    visibility: visible;
+    top: 45px;
+}
+.logo img{
+    width: 120px;
+}
+
+
+.sub-menu {
+    position: absolute;
+    border: 1px solid #333;
+    display: block;
+    line-height: 22px;
+    visibility: hidden;
+    top: 60px;
+    transition: 0.3s;
+    z-index: 1;
+    background: #ffff;
+
+}
+
+.sub-menu ul {
+    padding-left: 12px;
+}
+
+.menu>li a {
+    font-size: 16px;
+    font-weight: bold;
+}
+.other{
+    display: flex;
+    flex: 1;
+}
+
+.other>li {
+    padding: 0 12px;
+    position: relative;
+}
+
+.other>li:first-child input {
+    border: none;
+    width: 120px;
+    border-bottom: 1px solid #333;
+
+}
+
+.aspect-ratio-169 {
+    position: relative;
+    padding-top: 600px;
+}
+
+.aspect-ratio-169 img {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    top: 0;
+    bottom: 0;
+    margin-bottom: 0;
+
+}
+
+.content{
+    display: flex;
+    padding: 0 12px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.content-item{
+    display: flex;
+    width: 200px;
+    height: 220px;
+    text-align: center;
+}
+
+
+/*---------- app hiện cuối trang chủ -----------*/
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 150px 0px 50px 0;
+}
+
+.app-container p {
+    line-height: 20px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+
+}
+
+.app-google {
+    margin: 50px;
+
+}
+
+.app-google img {
+    height: 50px;
+
+}
+
+.app-container input {
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+
+}
+
+.footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 70px;
+}
+
+.footer li {
+    padding: 0 12px;
+}
+
+.category {
+    padding-left: 100px;
+}
+
+.category-top {
+    margin-bottom: 50px;
+}
+
+.category-top p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 12px;
+    font-size: 12px;
+}
+
+.category-left {
+    width: 20%;
+    height: 100%;
+}
+
+.category-left ul li>a {
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+
+.category-left-boLoc {
+    background-color: #ffff;
+    border: 1px solid #000;
+    height: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.category-left-loc {
+    background-color: #ffff;
+    border: 1px solid #000;
+    height: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.category-right {
+    width: 80%;
+}
+
+.category-right-item {
+    flex: 1;
+    padding: 0 12px;
+
+}
+
+.category-right-item select {
+    width: 100%;
+    height: 40px;
+    padding: 10px 15px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+.category-right-item:first-child {
+    flex: 2;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.category-right-content {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.category-right-content-item {
+    width: calc(25%-12px);
+    text-align: center;
+    padding: 12px 0;
+}
+
+.category-right-content-item h1 {
+    font-size: 16px;
+
+}
+
+.category-right-content-item img {
+    width: 100%;
+    height: 400px;
+
+}
+
+.category-right-content-item-Ao{
+    width: calc(25%-12px);
+    height: 400px;
+
+}
+
+.category-right-bottom {
+    justify-content: space-between;
+    margin: 30px;
+    width: 100%;
+}
+
+.product {
+    padding-left: 100px;
+}
+
+.product-top {
+    margin-bottom: 50px;
+}
+
+.product-content-left {
+    width: 50%;
+}
+
+.product-content-left img {
+    width: 90%;
+    height: 100%;
+}
+
+.product-content-right {
+    width: 50%;
+    font-size: 24px;
+}
+
+.product-content-right-button button {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+
+.product-content-right-button button>p {
+    color: white;
+    font-size: 20px;
+}
+
+.cart-top-cart {}
+
+.cart-top-cart img {
+    height: 50px;
+    width: 100%;
+}
+
+.cart {
+    padding: 100px 0;
+}
+
+
+.cart-top {
+    height: 2px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 20px 0 100px;
+}
+
+.cart-content table {
+    text-align: center;
+    width: 100%;
+
+}
+
+.cart-content table th {
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart-content img {
+    height: 100px;
+    width: 35%;
+}
+
+.cart-content p {
+    font-weight: bold;
+}
+
+.cart-content-button button {
+    margin-right: 12px;
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-content-button button>p {
+    color: white;
+    font-size: 20px;
+}
+
+.delivery {
+    padding: 12px 0;
+}
+
+.delivery-content-left {
+    width: 40%;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(54, 229, 27);
+}
+
+.delivery-content-right {
+    width: 50%;
+}
+
+.delivery-content table {
+    text-align: center;
+    width: 100%;
+
+}
+
+.delivery-content-input label {
+    margin-bottom: 6px;
+    display: block;
+}
+
+.delivery-content-button {
+    margin: 12PX 0;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.delivery-content-button button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    background-color: rgb(225, 92, 92);
+    color: white;
+    cursor: pointer;
+}
+
+.payment {
+    padding: 30px 0;
+    padding-left: 24px;
+    justify-self: center;
+}
+
+.payment-content-left {
+    width: 50%;
+
+}
+
+.payment-content-right {
+    width: 50%;
+
+}
+
+.login_container{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #bed676;
+   
+}
+
+.login_form{
+    width: 300px;
+    height: 500px;
+    background: white;
+    border-radius:10px ;
+    padding: 40px 30px;
+}
+
+.button{
+    height: 35px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #bed676;
+    border: none;
+    cursor: pointer;
+
+}
+.login_form h1{
+    margin-bottom: 40px;
+}
+
+.form_text{
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.form_text input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px solid #000;
+    background: white;
+}
+.form_text label{
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    border: none;
+    transition: 0.5s;
+}
+.form_text label.focus {
+    transform: translateY(-20px);
+}
+
+.pagenew{
+    padding-right: 12px;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    background-color: wheat;
+    margin-top: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.thanhtoan{
+    background-color: wheat;
+    color: black;
+    width: 200px;
+    border-radius: 4px;
+    margin-right: 12px;
+}
+
+.pay{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 35px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.home{
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.singup{
+    color: red;
+}
+
+.bottom{
+    padding-top: 100px;
+    border-top: 1px solid #dddddd;
+    position: relative;
+
+}
+
+.bottom-top{
+    position: absolute;
+    width: 30px;
+    border: 2px solid #dddddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: -15px;
+}
+
+.other-image{
+    height: 35px;
+    width: 35px;
+}

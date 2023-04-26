@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivy-Project</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script>
+        function home_redirect() {
+            window.location.href = "index.html"
+        }
+        function category_redirect() {
+            window.location.href = "category.html"
+        }
+        function product_redirect() {
+            window.location.href = "product.html"
+        }
+        function Cart_redirect() {
+            window.location.href = "Cart.html"
+        }
+        function login_redirect() {
+            window.location.href = "login.html"
+        }
+        function payment_redirect() {
+            window.location.href = "payment.html"
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logoIVY.png">
+        </div>
+
+        <div class="menu">
+            <li><input class="home" type="button" value="TRANG CHỦ" onclick="home_redirect()"></li>
+            <li><input class="home" type="button" value="SẢN PHẨM" onclick="category_redirect()"></li>
+            <ul class="sub-menu">
+                <li><a href="">Hàng mới về</a></li>
+                <li><a href="">Collection</a></li>
+                <li><input class="home" type="button" value="Áo" onclick="product_redirect()"></li>
+                <ul>
+
+                    <li>Áo Sơ Mi</li>
+                    <li>Áo thun</li>
+                    <li>Áo chống nắng</li>
+                    <li>Áo khoác</li>
+
+                </ul>
+                </li>
+                <li><a href="">Quần</a>
+                    <ul>
+                        <li>Quần jean</li>
+                        <li>Quần lửng</li>
+                        <li>Quần dài</li>
+
+                    </ul>
+                </li>
+            </ul>
+
+
+            </li>
+            <li><input class="home" type="button" value="BLOG" onclick="home_redirect()"></li>
+            <li><input class="home" type="button" value="LIÊN HỆ" onclick="home_redirect()"></li>
+        </div>
+
+        <div class="other">
+            <LI> <input placeholder="Tìm kiếm" type="Tìm kiếm">
+            </LI>
+            <li><a href=""></a>
+                <input class="other-image" type="image" src="images/cart.png" onclick="Cart_redirect()">
+            </li>
+            </li>
+            <li><a href=""></a>
+                <input class="other-image" type="image" src="images/dic-employee.png" onclick="login_redirect()">
+            </li>
+            </li>
+
+        </div>
+    </header>
+
+    <section id="slide">
+        <div class="aspect-ratio-169">
+            <img src="images/bg.jpg">
+        </div>
+        <div class="content row">
+            <div class="content-item">
+                <img src="images/soMi2.1.jfif">
+
+
+
+            </div>
+            <div class="content-item">
+                <img src="images/ao3.1.jfif">
+
+
+
+            </div>
+            <div class="content-item">
+                <img src="images/sp11.jfif">
+
+
+
+            </div>
+            <div class="content-item">
+                <img src="images/ao4.1.jpg">
+
+
+
+            </div>
+            </div>
+            <div class="content row">
+            <div class="content-item">
+                <img src="images/ao5.jpg">
+
+
+            </div>
+            <div class="content-item">
+                <img src="images/sp6.jfif">
+
+
+            </div>
+            <div class="content-item">
+                <img src="images/sp7.jfif">
+
+
+            </div>
+            <div class="content-item">
+                <img src="images/soMi2.1.jfif">
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="app-container">
+        <p>Tải ứng dụng</p>
+        <div class="app-google">
+            <img src="images/googleplay.png">
+            <img src="images/appstore.png">
+        </div>
+        <p>Nhận thông tin IVY moda</p>
+        <input type="text" placeholder="Nhập email của bạn...">
+    </section>
+
+    <div class="footer">
+        <li><a href=""><img src="images/img-congthuong.png"></a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Tuyển dụng</a></li>
+        <li><a href="">Giới thiệu</a></li>
+    </div>
+</body>
+
+</html>

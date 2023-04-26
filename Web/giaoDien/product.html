@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivy-Project</title>
+    <link rel="stylesheet" href="style.css">
+     
+
+    <script>
+        function home_redirect(){
+            window.location.href="index.html"}
+        function category_redirect(){
+            window.location.href="category.html"
+        }
+        function product_redirect(){
+            window.location.href="product.html"
+        }
+        function Cart_redirect(){
+            window.location.href="Cart.html"
+        }
+        function login_redirect(){
+            window.location.href="login.html"
+        }
+        function payment_redirect(){
+            window.location.href="payment.html"
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logoIVY.png">
+        </div>
+
+        <div class="menu">
+            <li><input class="home" type="button" value="TRANG CHỦ" onclick="home_redirect()"></li>
+            <li><input class="home" type="button" value="SẢN PHẨM" onclick="category_redirect()"></li>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới về</a></li>
+                    <li><a href="">Collection</a></li>
+                    <li><input class="home" type="button" value="Áo" onclick="product_redirect()"></li>
+                        <ul>
+                            
+                            <li>Áo Sơ Mi</li>
+                            <li>Áo thun</li>
+                            <li>Áo chống nắng</li>
+                            <li>Áo khoác</li>
+
+                        </ul>
+                    </li>
+                    <li><a href="">Quần</a>
+                        <ul>
+                            <li>Quần jean</li>
+                            <li>Quần lửng</li>
+                            <li>Quần dài</li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </li>
+            <li><input class="home" type="button" value="BLOG" onclick="home_redirect()"></li>
+        <li><input class="home" type="button" value="LIÊN HỆ" onclick="home_redirect()"></li>
+
+        </div>
+
+        <div class="other">
+            <LI> <input placeholder="Tìm kiếm" type="Tìm kiếm">
+            </LI>
+            <li><a href=""></a>
+                <input class="other-image" type="image" src="images/cart.png" onclick="Cart_redirect()"></li>
+            </li>
+            <li><a href=""></a>
+                <input class="other-image" type="image" src="images/dic-employee.png" onclick="login_redirect()"></li>
+            </li>
+            
+        </div>
+    </header>
+
+    <section class="product">
+        <div class="container">
+            <div class="product-top row">
+                <p>Trang chủ</p><span> &#10230;</span>
+                <p>Sản phẩm</p><span> &#10230;</span>
+                <p>Hàng mới về<span> &#10230;</span>
+                <p> Áo</p>
+            </div>
+            <div class="product-content row">
+
+                <div class="product-content-left">
+                    <img src="images/sp1.jfif" alt="">
+                </div>
+
+                <div class="product-content-right">
+                    <div class="product-content-right-name">
+                        <h1>Áo sơ mi lụa</h1>
+                        <p>MSP: 1234567</p>
+                    </div>
+                    <div class="product-content-right-price">
+                        <p> 595.000đ</p>
+                    </div>
+                    <div class="product-content-right-button row">
+                        <input class="button thanhtoan" type="button" value="THÊM VÀO GIỎ HÀNG" onclick="Cart_redirect()">
+                        <input class="thanhtoan pay" type="button" value="MUA NGAY" onclick="payment_redirect()">
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom-top">
+                            &#8744;
+                        </div>
+                        <div class="bottom-content">
+                            <h1 style="font-weight: bold; color: #4b4949dd; font-size: 20px;">Mô tả</h1>
+                            <h1 style="font-size: 16px; color: black; font-weight: normal;">Áo sơ mi dáng vest. Đằng trước là cổ 2 ve, đằng sau là cổ thủy thủ. Phần eo được chiết nhẹ. Cổ tay áo xẻ tự nhiên. Độ dài vừa phải. Chất liệu lụa mềm.</h1>
+                            <h1 style="font-size: 16px; color: black; font-weight: normal;">Thiết kế áo sơ mia này được lấy cảm hứng từ chiếc áo vest cổ điển với dáng đứng form. Cổ 2 ve mở rộng giúp khoe trọn đường xương quai xanh của nàng. </h1>
+                            <h1 style="font-size: 16px; color: black; font-weight: normal;">Phía đằng sau được phối cùng cổ thủy thủ đem đến nét trẻ trung và nữ tính. Dáng áo được chiết nhẹ ở eo để định hình tỷ lệ cơ thể người mặc.</h1>
+                            <h1 style="font-size: 16px; color: black; font-weight: normal;">Màu sắc: Trắng - Đỏ tươi</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-container">
+        <p>Tải ứng dụng</p>
+        <div class="app-google">
+            <img src="images/googleplay.png">
+            <img src="images/appstore.png">
+        </div>
+        <p>Nhận thông tin IVY moda</p>
+        <input type="text" placeholder="Nhập email của bạn...">
+    </section>
+
+    <div class="footer">
+        <li><a href=""><img src="images/img-congthuong.png"></a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Tuyển dụng</a></li>
+        <li><a href="">Giới thiệu</a></li>
+    </div>
+</body>
+
+</html>

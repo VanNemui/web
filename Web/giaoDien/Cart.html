@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivy-Project</title>
+    <link rel="stylesheet" href="style.css">
+     
+
+    <script>
+        function home_redirect(){
+            window.location.href="index.html"}
+        function category_redirect(){
+            window.location.href="category.html"
+        }
+        function product_redirect(){
+            window.location.href="product.html"
+        }
+        function Cart_redirect(){
+            window.location.href="Cart.html"
+        }
+        function login_redirect(){
+            window.location.href="login.html"
+        }
+        function payment_redirect(){
+            window.location.href="payment.html"
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logoIVY.png">
+        </div>
+
+        <div class="menu">
+            <li><input class="home" type="button" value="TRANG CHỦ" onclick="home_redirect()"></li>
+            <li><input class="home" type="button" value="SẢN PHẨM" onclick="category_redirect()"></li>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới về</a></li>
+                    <li><a href="">Collection</a></li>
+                    <li><input class="home" type="button" value="Áo" onclick="product_redirect()"></li>
+                        <ul>
+                            
+                            <li>Áo Sơ Mi</li>
+                            <li>Áo thun</li>
+                            <li>Áo chống nắng</li>
+                            <li>Áo khoác</li>
+
+                        </ul>
+                    </li>
+                    <li><a href="">Quần</a>
+                        <ul>
+                            <li>Quần jean</li>
+                            <li>Quần lửng</li>
+                            <li>Quần dài</li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </li>
+            <li><input class="home" type="button" value="BLOG" onclick="home_redirect()"></li>
+        <li><input class="home" type="button" value="LIÊN HỆ" onclick="home_redirect()"></li>
+        </div>
+
+        <div class="other">
+            <LI> <input placeholder="Tìm kiếm" type="Tìm kiếm">
+            </LI>
+            <li><a href=""></a>
+                <input class="other-image" type="image" src="images/cart.png" onclick="Cart_redirect()"></li>
+            </li>
+            <li><a href=""></a>
+                <input class="other-image" type="image" src="images/dic-employee.png" onclick="login_redirect()"></li>
+            </li>
+            
+        </div>
+    </header>
+
+    <section class="Cart">
+        <div class="container">
+            <div class="Cart-top row">
+                <div class="cart-top-cart">
+                    <img src="images/cart.png" >
+                </div>
+            </div>
+
+            <div class="cart-content row">
+                <table> <!--table: bảng hiển thị, tr: bắt đầu 1 dòng mới, th/td: nội dung của một cột, không ghi gì thì bỏ trống-->
+                    <tr>
+                        <th></th>
+                        <th>Sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá tiền</th>
+                        <th>Xóa</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="check"></td> <!--input type: kiểu đầu vào, text: chữ, checkbox: hộp kiểm, radio: ô tròn(xuất hiện trong phương thức thanh toán)-->
+                        <td>
+                            <img src="images/sp1.jfif" alt="">
+                        </td>
+                        <td>
+                            <p>Áo sơ mi chiết eo</p>
+                        </td>
+                        <td>1</td>
+                        <td>
+                            <p name="money">595.000đ</p>
+                        </td>
+                        <td>
+                            <button><span>x</span></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="check"></td>
+                        <td>
+                            <img src="images/soMi2.jfif" alt="">
+                        </td>
+                        <td>
+                            <p >Áo sơ mi</p>
+                        </td>
+                        <td>1</td>
+                        <td>
+                            <p name="money">580.000đ</p>
+                        </td>
+                        <td>
+                            <button><span>x</span></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="check"></td>
+                        <td>
+                            <img src="images/ao3.jfif" alt="">
+                        </td>
+                        <td>
+                            <p> Set Áo sơ mi</p>
+                        </td>
+                        <td>1</td>
+                        <td>
+                            <p name="money">600.000đ</p>
+                        </td>
+                        <td>
+                            <button><span>x</span></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="check"></td>
+                        <td>
+                            <img src="images/ao4.jpg" alt="">
+                        </td>
+                        <td>
+                            <p>Set Áo Hai Dây</p>
+                        </td>
+                        <td>1</td>
+                        <td>
+                            <p name="money">570.000đ</p>
+                        </td>
+                        <td>
+                            <button><span>x</span></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <TD>
+                            <p>TỔNG TIỀN</p>
+                        </TD>
+                        <td></td>
+                        <td>0.000đ</td>
+                        <TD></TD>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <TD></TD>
+                        <td></td>
+                        <td></td>
+                        <TD>
+                            <div class="cart-content-button">
+                                <input class="button thanhtoan" type="button" value="THANH TOÁN" onclick="payment_redirect()"> <!-- nhấn thì chuyển đến hàm page_director trên đầu-->
+                            </div>
+                        </TD>
+                        <TD></TD>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script language="javascript">
+            document.getElementById('btn').onclick = function()
+            {
+                // Khai báo tham số
+                var checkbox = document.getElementsByName('check');
+                var money= document.getElementsByName('money');
+                var result =document.getElementsByName('result')
+                 
+                // Lặp qua từng checkbox để lấy giá trị
+                for (var i = 0; i < checkbox.length; i++){
+                    if (checkbox[i].checked === true){
+                        result += money[i].value ;
+                    }
+                }
+                 alert(result);
+                
+            };
+        </script>
+    </section>
+
+    <section class="app-container">
+        <p>Tải ứng dụng</p>
+        <div class="app-google">
+            <img src="images/googleplay.png">
+            <img src="images/appstore.png">
+        </div>
+        <p>Nhận thông tin IVY moda</p>
+        <input type="text" placeholder="Nhập email của bạn...">
+    </section>
+
+    <div class="footer">
+        <li><a href=""><img src="images/img-congthuong.png"></a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Tuyển dụng</a></li>
+        <li><a href="">Giới thiệu</a></li>
+    </div>
+</body>
+
+</html>
